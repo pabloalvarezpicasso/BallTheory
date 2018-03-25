@@ -1,0 +1,225 @@
+/**
+ *   Anchor, default reset
+ */
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	/* Don't count padding and borders towards widths */ 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ @import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+
+
+
+
+/**
+ *   Typographic reset
+ */
+body {
+	/* Use a serif font for nice readability, but not Times */
+font-family: 'europa', sans-serif;
+}
+
+h1, h2, h3, h4, h5, #logo, #top, .slidey b, .slidey label, .counter, input, textarea, button, .pagination {
+font-family: 'europa', sans-serif;
+	font-weight: 300;
+}
+
+pre, code, .mono {
+	font: 12px/19px "Anonymous Pro", Consolas, monospace;
+	padding: 0 2px;
+}
+
+
+pre {
+	padding: 15px 20px;
+	margin-bottom: 20px;
+	
+	border-radius: 5px;
+	white-space: pre-wrap;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+	a img {
+		border: none;
+	}
+
+/**
+ *   Layout reset
+ */
+.wrap {
+	min-width: 280px;
+/* 	max-width: 750px; */
+	width: 100%;
+	
+	margin: 0 auto;
+}
+
+/**
+ *   Default colours
+ */
+body, .items > li:first-child {
+	color: #000;
+}
+a, .items h1 a:hover {
+	color: black;
+}
+	
+pre, .hilite, mark {
+	background: #f9f6ea;
+	color: #8b7c65;
+	text-shadow: 0 1px 0 rgba(255,255,255,.2);
+}
+
+input[type=text], textarea, input[type=email] {
+	color: #222;
+	background-color: rgba(248, 249, 243, .9);
+	border: 1px solid #999;
+	padding: 15px 10px 15px 10px;
+	margin-top: 5px;
+	font-size: 16px;
+	min-width: 80%;
+	max-width: 100%;
+}
+::-webkit-input-placeholder {
+	color: #888;
+}
+:-moz-placeholder, :placeholder {
+		color: #888;
+}
+input[type=button], input[type=submit]{    
+	background-color: transparent;
+	display: inline-block;
+	border: solid 2px rgba(244,0,0, .9);
+    text-transform: uppercase;
+    text-align: center;
+	min-width: 20%;
+	padding: 30px 50px 30px 50px;
+	margin-left: 8%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	color: black;
+	font-family: 'europa', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.screen-reader-response{display: none;}
+
+.wpcf7-not-valid-tip{
+	font-style: italic;
+	color: rgb(245, 0, 0);
+	display: block;
+}
+.wpcf7-response-output, .wpcf7-validation-errors{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+}	
+.wpcf7-mail-sent-ok{
+	background-color: #222;
+	color: white;
+	padding: 35px;
+}
+.wpcf7-validation-errors{
+	color: rgb(245, 0, 0);
+	font-weight: bolder;
+}
+
+input[type=button]:hover, input[type=submit]:hover{    
+	border: solid 2px rgba(244,0,0,1);
+	background-color: rgb(244,0,0);
+	color: white;	
+}
+.error, .success {
+	padding: 20px 30px;
+	margin-bottom: 30px;
+
+	background: #e25d47;
+	color: #fff;
+	
+	border-radius: 5px;
+}
+	.success {
+		background: #88be33;
+	}
+	.error p, .success p {
+		float: none !important;
+		width: 100%;
+		padding: 0;
+		margin: 0 !important;
+	}
+
+/**
+ *   Transitions and animations
+ */
+/*
+a, a img {
+	-webkit-transition: opacity .2s, color .2s;
+	-moz-transition: opacity .2s, color .2s;
+	transition: opacity .2s, color .2s;
+}
+*/
+
+/* SLIDEY */
+/* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
+/*
+.slidey {
+	overflow: hidden;
+	padding: 30px 0;
+
+	background: #f3f5f8;
+	border-bottom: 1px solid #e5e8ed;
+}
+	.js-enabled .slidey {
+		-webkit-transition: margin-top .2s;
+		-moz-transition: margin-top .2s;
+		transition: margin-top .2s;
+	}
+	.slidey b, .slidey label {
+		display: block;
+		font-weight: 500;
+		padding-bottom: 15px;
+
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.slidey form, .slidey aside {
+		float: left;
+		width: 50%;
+	}
+		.slidey form input {
+			padding: 20px;
+			width: 75%;
+		}
+	.slidey li {
+		list-style: none;
+	}
+		.slidey a {
+			display: block;
+			text-decoration: none;
+
+			color: #717985;
+		}
+			.slidey a:hover {
+				color: #414b59;
+			}
+		.slidey li span {
+			float: right;
+			opacity: .6;
+		}
+*/
+

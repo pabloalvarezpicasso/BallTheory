@@ -1,0 +1,153 @@
+.wrap_3d_runding {
+	top: 0px;
+	position: fixed;
+	
+	width: 100%;
+	height:100vh;
+	overflow: hidden;
+	
+	perspective: 1000px;
+	perspective-origin: 50% 100px;
+
+	transform-style: preserve-3d;
+
+}
+
+
+
+.runding_1{	
+		/*transform-style: preserve-3d;*/
+/*box-sizing: content-box;*/
+position: absolute;
+top: -50%;
+width:95vw;
+height:65vw;
+margin-top:40vw;
+margin-left:2.5vw;
+border: solid 20px rgba(41, 182, 246,1);
+transform: translateZ(0vh);
+vertical-align: baseline;
+background-blend-mode: multiply;
+/*background-color: #fff;*/
+	/*transform-style: flat;*/
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+	.runding_1 {
+	/*	margin-top:30vw;
+		margin-left:30vw;*/
+		margin-top:20vw;
+		margin-left:2vw;
+	}
+}
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+	.runding_1 {
+		margin-top:30vw;
+		margin-left:5vw;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.runding_1 {
+		margin-top:10vw;
+		margin-left:5vw;
+	}
+}
+
+
+.runding_2, .runding_3, .runding_4, .runding_5, .runding_6, .runding_7, .runding_8, .runding_9{
+	position: absolute;
+	box-sizing: border-box;
+	transform: translateZ(30vh);
+	background-blend-mode: multiply;
+	transform-style: preserve-3d;
+}
+.runding_2{
+	border: solid 10px rgba(41, 182, 246,1);
+	border-radius: 50%;
+	width: 10vw;
+	height: 10vw;
+	margin-top:28%;
+	margin-left:45%;
+
+}
+.runding_3{
+	border: none;
+	box-sizing: content-box;
+	background-color: rgba(41, 182, 246,1);
+	width: 10px;
+	height: 100%;
+	margin-top: 0;
+	margin-left: 50%;
+
+}
+
+.runding_4, .runding_7{
+	border: solid 10px rgba(41, 182, 246,1);
+	width: 25%;
+	height: 70%;
+	margin-top: 10.5%;
+}
+.runding_4{
+	border-top-right-radius: 50em;
+	border-bottom-right-radius: 50em;
+	border-left: none;
+	margin-left: 0;
+}
+.runding_7{
+	border-top-left-radius: 50em;
+	border-bottom-left-radius: 50em;
+	border-right: none;
+	margin-left: 75%;
+}
+
+.runding_5, .runding_8{
+	border: solid 10px rgba(41, 182, 246,1);
+	border-right: none;
+	border-left: none;
+	margin-top:60%;
+	width: 13vw;
+	height: 12vw;
+}
+.runding_5{
+	margin-left: 0px;
+}
+.runding_8{
+	margin-left: 42%
+}
+
+.runding_6, .runding_9{
+	border: solid 10px rgba(41, 182, 246,1);
+	border-radius: 50%;
+	width: 12vw;
+	height: 12vw;
+	margin-top: -10px;
+}
+.runding_6{
+	margin-left: 50%;
+}
+.runding_9{
+	margin-left: -50%;
+}
+
+
+
+@keyframes spin {
+	from { transform: rotateY(240deg) rotateX(90deg) scale(1.1); }
+	to { transform: rotateY(380deg) rotateX(90deg) scale(4);}
+}
+
+
+
+.runding_1{
+	animation: spin 100s infinite linear;
+}
+
+/*.runding_3d{
+	animation: example 270s infinite linear;
+}
+
+*/
+
+
